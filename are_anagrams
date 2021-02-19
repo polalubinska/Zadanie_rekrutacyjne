@@ -1,0 +1,10 @@
+def are_anagrams(s1, s2, s3):
+    s1 = [ord(s1[i]) for i in range(len(s1))]
+    s2 = [ord(s2[i]) for i in range(len(s2))]
+    s3 = [ord(s3[i]) for i in range(len(s3))]
+    return sorted(s1) == sorted(s2) == sorted(s3)
+
+#Aby rozwiązać zadanie wykorzystałam konstrukcję listy składanej, dzięki której kod jest krótszy i czytelniejszy. 
+#Za pomocą funcji ord(), dla każdego z trzech łańcuchów znaków zwracam w postaci listy 
+#reprezentację występujących w nim znaków jako intigery, następnie porównuję posortowane listy intigerów.
+#Jeżeli dane łańcuchy znaków są anagramami to funkcja zwróci True, w przeciwnym razie zwróci False 
