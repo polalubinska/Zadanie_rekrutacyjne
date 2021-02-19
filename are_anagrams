@@ -6,5 +6,5 @@ def are_anagrams(s1, s2, s3):
 
 #Aby rozwiązać zadanie wykorzystałam konstrukcję listy składanej, dzięki której kod jest krótszy i czytelniejszy. 
 #Za pomocą funcji ord(), dla każdego z trzech łańcuchów znaków zwracam w postaci listy 
-#reprezentację występujących w nim znaków jako intigery, następnie porównuję posortowane listy intigerów.
+#reprezentację występujących w nim znaków (unicode characters) jako intigery, następnie porównuję posortowane listy intigerów.
 #Jeżeli dane łańcuchy znaków są anagramami to funkcja zwróci True, w przeciwnym razie zwróci False 
